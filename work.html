@@ -4,16 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Anchal Homepage</title>
   </head>
   <body>
     <div class="container">
       <nav class="nav">
         <div class="left">
-          <div class="logo">
-
-          </div>
+          <div class="logo"></div>
         </div>
         <div class="right">
           <a class="current" href="#work">WORK</a>
@@ -22,42 +20,74 @@
         </div>
       </nav>
       <main class="content">
-
-        <div class="pc-tab">
-          <input checked="checked" id="tab1" type="radio" name="pct" />
-          <input id="tab2" type="radio" name="pct" />
-          <input id="tab3" type="radio" name="pct" />
-            <nav>
-              <ul>
-                <li class="tab1">
-                  <label for="tab1">First Tab</label>
-                </li>
-                <li class="tab2">
-                  <label for="tab2">Second Tab</label>
-                </li>
-                <li class="tab3">
-                  <label for="tab3">Third Tab</label>
-                </li>
-              </ul>
-            </nav>
-            <section>
-              <div class="tab1">
-                <h2>First</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque quidem minus nostrum, voluptatem accusamus aspernatur quia harum ratione, officia laudantium inventore autem doloribus atque labore numquam non. Hic, animi.</p>
-              </div>
-              <div class="tab2">
-                <h2>Second</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nesciunt ipsum dolore error repellendus officiis aliquid a, vitae reprehenderit, accusantium vero, ad. Obcaecati numquam sapiente cupiditate. Praesentium eaque, quae error!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, maiores.</p>
-              </div>
-              <div class="tab3">
-                <h2>Third</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, nobis culpa rem, vitae earum aliquid.</p>
-              </div>
-              
-            </section>
+        <div class="work-tabs">
+          <input id="graphic-design-tab" type="radio" name="tab" />
+          <input checked="checked" id="ui-design-tab" type="radio" name="tab" />
+          <input id="ux-design-tab" type="radio" name="tab" />
+          <div>
+            <ul>
+              <li class="graphic-design-tab">
+                <label for="graphic-design-tab">Graphic Design</label>
+              </li>
+              <li class="ui-design-tab">
+                <label for="ui-design-tab">UI Design</label>
+              </li>
+              <li class="ux-design-tab">
+                <label for="ux-design-tab">UX Design</label>
+              </li>
+            </ul>
           </div>
-          
+          <section>
+            <div class="graphic-design-tab"></div>
+            <div class="ui-design-tab">
+              <div class="ui-design-container">
+                <div class="ui-design-left-container">
+                  <div class="ui-design-left-content">
+                    <img class="ui-design-left-img"
+                      src="https://cdn.shopify.com/s/files/1/0280/7062/files/beeswax-wrap-bowl-abeego.gif?11671091127938009736"
+                    />
+                  </div>
+                </div>
+                <div class="ui-design-right-container">
+                  <div class="ui-design-right-content">
+                    <h4>ACSA Logo</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscina
+                      elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi ut aliquip ex
+                      ea commodo consequat.
+                    </p>
+                    <button class="info-btn">View Case Study</button>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-design-container">
+                <div class="ui-design-left-container">
+                  <div class="ui-design-left-content">
+                    <img class="ui-design-left-img"
+                      src="https://cdn.shopify.com/s/files/1/0280/7062/files/beeswax-wrap-bowl-abeego.gif?11671091127938009736"
+                    />
+                  </div>
+                </div>
+                <div class="ui-design-right-container">
+                  <div class="ui-design-right-content">
+                    <h4>ACSA Logo</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscina
+                      elit, sed do eiusmod tempor incididunt ut labore et
+                      dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi ut aliquip ex
+                      ea commodo consequat.
+                    </p>
+                    <button class="info-btn">View Case Study</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ux-design-tab"></div>
+          </section>
+        </div>
       </main>
       <footer class="footer">
         <div class="left"></div>
@@ -66,7 +96,10 @@
         </div>
         <div class="right">
           <a class="behance" href="https://www.behance.net/anchalarya"></a>
-          <a class="linkedin" href="https://www.linkedin.com/in/anchalarya/"></a>
+          <a
+            class="linkedin"
+            href="https://www.linkedin.com/in/anchalarya/"
+          ></a>
         </div>
       </footer>
     </div>

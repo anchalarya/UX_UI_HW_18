@@ -92,7 +92,7 @@ footer {
 
 
 .content {
-  background: url('../images/bg.jpeg') no-repeat;
+  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url('../images/bg.jpeg') no-repeat;
   background-size: 100%;
 }
 
@@ -138,55 +138,68 @@ footer .right .linkedin {
 
 /* ----------@@ WORK.HTML @@--------------- */
 
-.pc-tab > input,
-.pc-tab section > div {
+.work-tabs > input,
+.work-tabs section > div {
   display: none;
 }
 
 
-#tab1:checked ~ section .tab1,
-#tab2:checked ~ section .tab2,
-#tab3:checked ~ section .tab3 {
+#graphic-design-tab:checked ~ section .graphic-design-tab,
+#ui-design-tab:checked ~ section .ui-design-tab,
+#ux-design-tab:checked ~ section .ux-design-tab {
   display: block;
 }
 
-#tab1:checked ~ nav .tab1,
-#tab2:checked ~ nav .tab2,
-#tab3:checked ~ nav .tab3 {
-  color: red;
+#graphic-design-tab:checked ~ div .graphic-design-tab,
+#ui-design-tab:checked ~ div .ui-design-tab,
+#ux-design-tab:checked ~ div .ux-design-tab {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-.pc-tab {
+.work-tabs {
   width: 100%;
-  max-width: 700px;
+  max-width: auto;
   margin: 0 auto;
 }
-.pc-tab ul {
+
+.work-tabs ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 15px auto;
 }
-.pc-tab ul li label {
-  float: left;
+
+
+.work-tabs ul li label {
+  margin-top: 15px;
   padding: 15px 25px;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-bottom: 0;
-  background: #eee;
+  /* background: #eee; */
   color: #444;
 }
-.pc-tab ul li label:hover {
+
+.work-tabs ul li label:hover {
   background: #ddd;
 }
-.pc-tab ul li label:active {
+
+.work-tabs ul li label:active {
   background: #fff;
 }
-.pc-tab ul li:not(:last-child) label {
+
+.work-tabs ul li:not(:last-child) label {
   border-right-width: 0;
 }
-.pc-tab section {
+
+.work-tabs section {
   clear: both;
 }
-.pc-tab section div {
+
+.work-tabs section > div {
   padding: 20px;
   width: 100%;
   border: 1px solid #ddd;
@@ -195,8 +208,23 @@ footer .right .linkedin {
   letter-spacing: 0.3px;
   color: #444;
 }
-.pc-tab section div h2 {
+
+.work-tabs section div h2 {
   margin: 0;
   letter-spacing: 1px;
   color: #34495e;
+}
+
+.work-tabs img {
+  height: 300px;
+  width: 400px;
+}
+
+.ui-design-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.ui-design-right-container {
+  padding: 2rem;
 }
