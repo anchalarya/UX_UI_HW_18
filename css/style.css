@@ -1,0 +1,202 @@
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  background-color: black;
+}
+
+
+.nav .left {
+  align-items: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .left .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  height: 75px;
+  width: 100px;
+  background: url('../images/logo-smaller.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.nav .right {
+  flex-direction: row;
+  align-items: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+
+}
+
+.nav .right a {
+  padding-left: 1rem;
+  color: white;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav .right a.current {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.nav .right a:hover {
+  background-color: white;
+  color: black;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-small;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.content {
+  background: url('../images/bg.jpeg') no-repeat;
+  background-size: 100%;
+}
+
+.content .content-left {
+  margin: 10rem;
+}
+
+.info-btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+footer .right {
+  margin-right: 2rem; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .right .behance {
+  background: url('../images/behance.png') no-repeat;
+  background-size: 100%;
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+footer .right .linkedin {
+  background: url('../images/linkedin.jpeg') no-repeat;
+  background-size: 100%;
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+}
+
+
+/* ----------@@ WORK.HTML @@--------------- */
+
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3 {
+  display: block;
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3 {
+  color: red;
+}
+
+.pc-tab {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.pc-tab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pc-tab ul li label {
+  float: left;
+  padding: 15px 25px;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  background: #eee;
+  color: #444;
+}
+.pc-tab ul li label:hover {
+  background: #ddd;
+}
+.pc-tab ul li label:active {
+  background: #fff;
+}
+.pc-tab ul li:not(:last-child) label {
+  border-right-width: 0;
+}
+.pc-tab section {
+  clear: both;
+}
+.pc-tab section div {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  background: #fff;
+  line-height: 1.5em;
+  letter-spacing: 0.3px;
+  color: #444;
+}
+.pc-tab section div h2 {
+  margin: 0;
+  letter-spacing: 1px;
+  color: #34495e;
+}
