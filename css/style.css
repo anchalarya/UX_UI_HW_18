@@ -232,6 +232,10 @@ footer .right .linkedin {
   flex-direction: row;
 }
 
+.ui-design-tab {
+  margin: auto 2rem;
+}
+
 .ui-design-right-content {
   margin-left: 2rem;
   margin-right: 2rem;
